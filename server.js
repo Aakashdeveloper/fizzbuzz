@@ -1,7 +1,7 @@
 const express =  require('express') ;
 const app = express();
 const bodyParser =  require('body-parser')
-const port = 7600;
+var port = process.env.PORT||2200;
 
 app.use(express.static(__dirname+'/public'));
 // Html or view file
